@@ -1,17 +1,17 @@
-var modpackURL = "https://twitter.com/MinesyNW";
-var tutorialURL = "https://minesy.net";
-var discordURL = "https://discord.gg/n5bfEEHgaE";
-var tiendaURL = "https://tienda.minesy.net/";
+var modpackURL = "https://twitter.com/MineHadesNET";
+var tutorialURL = "https://youtu.be/_jbrxuqU-HQ";
+var discordURL = "https://discord.gg/minehades";
+var tiendaURL = "https://tienda.minehades.net/";
 
 document.querySelector(".modpack").addEventListener("click", function () {
   window.open(modpackURL);
   Swal.fire({
     icon: "success",
-    title: "¡Has abierto el Twitter!",
+    title: "¡Has abierto el Mod!",
     text: "Mira la otra pestaña.",
     showCancelButton: true,
     confirmButtonText: "OK",
-    cancelButtonText: "Inicio",
+    cancelButtonText: "Tutorial",
     reverseButtons: true,
     customClass: {
       cancelButton: "order-third",
