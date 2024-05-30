@@ -67,7 +67,8 @@ html {
 }
 
 .background {
-  background-image: url("https://media.discordapp.net/attachments/1175521791578480650/1175611084250554368/unknown.png?ex=656bdc24&is=65596724&hm=78f5f88d6837c473687121ce3974ff3e1b68884b8093fe9170ce458453a14688&=");
+  position: relative;
+  background-image: url("https://media.discordapp.net/attachments/1233582563235201034/1245881093467537448/image.png?ex=665a5cb0&is=66590b30&hm=bec1523d735dc47593ec8bb871dd0d81ecacd0508998efaadb5faeda070f8315&=&format=webp&quality=lossless&width=550&height=292");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -76,6 +77,23 @@ html {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(255, 166, 0, 0.407), rgba(255, 69, 0, 0.407));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.background > * {
+  position: relative;
+  z-index: 2;
 }
 
 .content {
@@ -121,7 +139,7 @@ html {
 }
 
 .gradient {
-  background: linear-gradient(90deg, #ff9531, #ffd103);
+  background: linear-gradient(90deg, #ffc760, #ff8251);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
